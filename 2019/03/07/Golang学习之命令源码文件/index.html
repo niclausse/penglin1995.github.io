@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="林鹏的个人博客">
 <meta property="og:description" content="一、概念Go语言中，源码文件分为命令源码文件、库源码文件和测试源码文件三种，他们有着不同的用途和编写规则。 本篇中介绍命令源码文件：如果一个源码文件声明属于main包，并且包含一个无接收参数和无返回参数的main函数，那么他就是命令源码文件。如： 1234567package mainimport &quot;fmt&quot;func main() &amp;#123;	fmt.Println(&quot;hello world!&quot;">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-07T02:40:58.320Z">
+<meta property="og:updated_time" content="2019-03-07T05:35:43.896Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Golang学习之命令源码文件">
 <meta name="twitter:description" content="一、概念Go语言中，源码文件分为命令源码文件、库源码文件和测试源码文件三种，他们有着不同的用途和编写规则。 本篇中介绍命令源码文件：如果一个源码文件声明属于main包，并且包含一个无接收参数和无返回参数的main函数，那么他就是命令源码文件。如： 1234567package mainimport &quot;fmt&quot;func main() &amp;#123;	fmt.Println(&quot;hello world!&quot;">
@@ -448,7 +448,7 @@
                 
               
 
-              <time title="创建时间：2019-03-07 09:43:34 / 修改时间：10:40:58" itemprop="dateCreated datePublished" datetime="2019-03-07T09:43:34+08:00">2019-03-07</time>
+              <time title="创建时间：2019-03-07 09:43:34 / 修改时间：13:35:43" itemprop="dateCreated datePublished" datetime="2019-03-07T09:43:34+08:00">2019-03-07</time>
             
 
             
@@ -519,7 +519,7 @@
 <p>注意，对flag.Usage的赋值必须在flag.Parse()之前。</p>
 <p>现在，把 demo2.go 另存为 demo3.go，然后在main函数体的开始出加入以下代码：</p>
 <figure class="highlight go"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">flag.Usage = <span class="function"><span class="keyword">func</span><span class="params">()</span></span> &#123;</span><br><span class="line"> fmt.Fprintf(os.Stderr, <span class="string">"Usage of %s:\n"</span>, <span class="string">"question"</span>)</span><br><span class="line"> flag.PrintDefaults()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<p>运行go run demo2.go –help时，即可看到自定义说明。cd</p>
+<p>运行go run demo2.go –help时，即可看到自定义说明。</p>
 
       
     </div>
@@ -552,22 +552,6 @@
       
       
 
-      
-        <div class="post-nav">
-          <div class="post-nav-next post-nav-item">
-            
-              <a href="/2019/03/01/test-menu/" rel="next" title="test menu">
-                <i class="fa fa-chevron-left"></i> test menu
-              </a>
-            
-          </div>
-
-          <span class="post-nav-divider"></span>
-
-          <div class="post-nav-prev post-nav-item">
-            
-          </div>
-        </div>
       
 
       
@@ -635,7 +619,7 @@
                 
                   <a href="/archives/">
                 
-                    <span class="site-state-item-count">3</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">日志</span>
                   </a>
                 </div>
@@ -650,9 +634,7 @@
                     
                       
                     
-                      
-                    
-                    <span class="site-state-item-count">2</span>
+                    <span class="site-state-item-count">1</span>
                     <span class="site-state-item-name">分类</span>
                   </a>
                 </div>
