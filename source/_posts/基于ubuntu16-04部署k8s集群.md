@@ -214,4 +214,4 @@ kubectl get nodes
 kubectl get pods -n kube-system
 ```
 
-至此，k8s集群搭建完毕。test_branch
+至此，k8s集群搭建完毕。
