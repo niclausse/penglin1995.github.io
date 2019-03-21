@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="环境信息版本信息            名称        版本                Docker        18.06-ce                Kubernetes        v1.13.4                操作系统        ubuntu16.04      机器信息            IP        作用        组件">
+  <meta name="description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1# swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2">
 <meta name="keywords" content="kubernetes&lt;br&#x2F;&gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于ubuntu16.04部署k8s集群&lt;br&#x2F;&gt;">
 <meta property="og:url" content="http://yoursite.com/2019/03/21/基于ubuntu16-04部署k8s集群/index.html">
 <meta property="og:site_name" content="林鹏的个人博客">
-<meta property="og:description" content="环境信息版本信息            名称        版本                Docker        18.06-ce                Kubernetes        v1.13.4                操作系统        ubuntu16.04      机器信息            IP        作用        组件">
+<meta property="og:description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1# swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-21T08:01:10.303Z">
+<meta property="og:updated_time" content="2019-03-21T08:12:16.431Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于ubuntu16.04部署k8s集群&lt;br&#x2F;&gt;">
-<meta name="twitter:description" content="环境信息版本信息            名称        版本                Docker        18.06-ce                Kubernetes        v1.13.4                操作系统        ubuntu16.04      机器信息            IP        作用        组件">
+<meta name="twitter:description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1# swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2">
 
 
 
@@ -448,7 +448,7 @@
                 
               
 
-              <time title="创建时间：2019-03-21 14:31:29 / 修改时间：16:01:10" itemprop="dateCreated datePublished" datetime="2019-03-21T14:31:29+08:00">2019-03-21</time>
+              <time title="创建时间：2019-03-21 14:31:29 / 修改时间：16:12:16" itemprop="dateCreated datePublished" datetime="2019-03-21T14:31:29+08:00">2019-03-21</time>
             
 
             
@@ -505,9 +505,9 @@
       
 
       
-        <h2 id="环境信息"><a href="#环境信息" class="headerlink" title="环境信息"></a>环境信息</h2><h3 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h3><table border="1" width="80%" align="center"><br>    <tr><br>        <td>名称</td><br>        <td>版本</td><br>    </tr><br>    <tr><br>        <th>Docker</th><br>        <th>18.06-ce</th><br>    </tr><br>    <tr><br>        <th>Kubernetes</th><br>        <th>v1.13.4</th><br>    </tr><br>    <tr><br>        <th>操作系统</th><br>        <th>ubuntu16.04</th><br>    </tr><br></table>
+        <h2 id="环境信息"><a href="#环境信息" class="headerlink" title="环境信息"></a>环境信息</h2><h3 id="版本信息"><a href="#版本信息" class="headerlink" title="版本信息"></a>版本信息</h3><table border="1" width="80%" align="center"><tr><td>名称</td><td>版本</td></tr><tr><th>Docker</th><th>18.06-ce</th></tr><tr><th>Kubernetes</th><th>v1.13.4</th></tr><tr><th>操作系统</th><th>ubuntu16.04</th></tr></table>
 
-<h3 id="机器信息"><a href="#机器信息" class="headerlink" title="机器信息"></a>机器信息</h3><table border="1" width="80%" align="center"><br>    <tr><br>        <td>IP</td><br>        <td>作用</td><br>        <td>组件</td><br>    </tr><br>    <tr><br>        <th>192.168.56.20</th><br>        <th>master</th><br>        <th></th><br>    </tr><br>    <tr><br>        <th>192.168.56.21</th><br>        <th>node</th><br>        <th></th><br>    </tr><br>    <tr><br>        <th>192.168.56.22</th><br>        <th>node</th><br>        <th></th><br>    </tr><br></table>
+<h3 id="机器信息"><a href="#机器信息" class="headerlink" title="机器信息"></a>机器信息</h3><table border="1" width="80%" align="center"><tr><td>IP</td><td>作用</td><td>组件</td></tr><tr><th>192.168.56.20</th><th>master</th><th></th></tr><tr><th>192.168.56.21</th><th>node</th><th></th></tr><tr><th>192.168.56.22</th><th>node</th><th></th></tr></table>
 
 <h2 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h2><h3 id="1、系统配置修改"><a href="#1、系统配置修改" class="headerlink" title="1、系统配置修改"></a>1、系统配置修改</h3><h4 id="（1）禁用swap"><a href="#（1）禁用swap" class="headerlink" title="（1）禁用swap"></a>（1）禁用swap</h4><p>临时禁用：</p>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># swapoff -a</span><br></pre></td></tr></table></figure>
