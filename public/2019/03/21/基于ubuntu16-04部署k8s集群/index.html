@@ -104,7 +104,7 @@
 <meta property="og:site_name" content="林鹏的个人博客">
 <meta property="og:description" content="环境信息1 版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  2 机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1 系统配置修改（1）禁用swap临时禁用： 1swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-21T09:21:28.526Z">
+<meta property="og:updated_time" content="2019-03-21T10:07:48.549Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于ubuntu16.04部署k8s集群&lt;br&#x2F;&gt;">
 <meta name="twitter:description" content="环境信息1 版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  2 机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1 系统配置修改（1）禁用swap临时禁用： 1swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。">
@@ -448,13 +448,9 @@
                 
               
 
-              <time title="创建时间：2019-03-21 17:11:26 / 修改时间：17:21:28" itemprop="dateCreated datePublished" datetime="2019-03-21T17:11:26+08:00">2019-03-21</time>
+              <time title="创建时间：2019-03-21 18:07:48" itemprop="dateCreated datePublished" datetime="2019-03-21T18:07:48+08:00">2019-03-21</time>
             
 
-            
-              
-
-              
             
           </span>
 
@@ -562,7 +558,7 @@
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubectl get pods -n kube-system</span><br></pre></td></tr></table></figure>
 <h3 id="6-node节点加入集群"><a href="#6-node节点加入集群" class="headerlink" title="6 node节点加入集群"></a>6 node节点加入集群</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">kubeadm join 192.168.56.20:6443 --token h7u22o.nk23ias5f1ft8hj9 --discovery-token-ca-cert-hash sha256:9f93785608c9a9de3e5d74e9ed30b8302691abfee7efd946a8c1b80d8582fe92</span><br></pre></td></tr></table></figure>
 <h3 id="7-在master节点上查看集群信息"><a href="#7-在master节点上查看集群信息" class="headerlink" title="7 在master节点上查看集群信息"></a>7 在master节点上查看集群信息</h3><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">kubectl get nodes</span><br><span class="line">kubectl get pods -n kube-system</span><br></pre></td></tr></table></figure>
-<p>至此，k8s集群搭建完毕。</p>
+<p>至此，k8s集群搭建完毕。test_branch</p>
 
       
     </div>
