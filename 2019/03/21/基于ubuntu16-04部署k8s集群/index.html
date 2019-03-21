@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1# swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2">
+  <meta name="description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2）关">
 <meta name="keywords" content="kubernetes&lt;br&#x2F;&gt;">
 <meta property="og:type" content="article">
 <meta property="og:title" content="基于ubuntu16.04部署k8s集群&lt;br&#x2F;&gt;">
 <meta property="og:url" content="http://yoursite.com/2019/03/21/基于ubuntu16-04部署k8s集群/index.html">
 <meta property="og:site_name" content="林鹏的个人博客">
-<meta property="og:description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1# swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2">
+<meta property="og:description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2）关">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-21T08:12:16.431Z">
+<meta property="og:updated_time" content="2019-03-21T08:14:42.591Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="基于ubuntu16.04部署k8s集群&lt;br&#x2F;&gt;">
-<meta name="twitter:description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1# swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2">
+<meta name="twitter:description" content="环境信息版本信息名称版本Docker18.06-ceKubernetesv1.13.4操作系统ubuntu16.04  机器信息IP作用组件192.168.56.20master192.168.56.21node192.168.56.22node  部署步骤1、系统配置修改（1）禁用swap临时禁用： 1swapoff -a 永久禁用：将/etc/fstab文件中包含swap的行注释掉。 （2）关">
 
 
 
@@ -448,7 +448,7 @@
                 
               
 
-              <time title="创建时间：2019-03-21 14:31:29 / 修改时间：16:12:16" itemprop="dateCreated datePublished" datetime="2019-03-21T14:31:29+08:00">2019-03-21</time>
+              <time title="创建时间：2019-03-21 14:31:29 / 修改时间：16:14:42" itemprop="dateCreated datePublished" datetime="2019-03-21T14:31:29+08:00">2019-03-21</time>
             
 
             
@@ -510,7 +510,7 @@
 <h3 id="机器信息"><a href="#机器信息" class="headerlink" title="机器信息"></a>机器信息</h3><table border="1" width="80%" align="center"><tr><td>IP</td><td>作用</td><td>组件</td></tr><tr><th>192.168.56.20</th><th>master</th><th></th></tr><tr><th>192.168.56.21</th><th>node</th><th></th></tr><tr><th>192.168.56.22</th><th>node</th><th></th></tr></table>
 
 <h2 id="部署步骤"><a href="#部署步骤" class="headerlink" title="部署步骤"></a>部署步骤</h2><h3 id="1、系统配置修改"><a href="#1、系统配置修改" class="headerlink" title="1、系统配置修改"></a>1、系统配置修改</h3><h4 id="（1）禁用swap"><a href="#（1）禁用swap" class="headerlink" title="（1）禁用swap"></a>（1）禁用swap</h4><p>临时禁用：</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"># swapoff -a</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">swapoff -a</span><br></pre></td></tr></table></figure>
 <p>永久禁用：<br>将<code>/etc/fstab</code>文件中包含swap的行注释掉。</p>
 <h4 id="（2）关闭防火墙"><a href="#（2）关闭防火墙" class="headerlink" title="（2）关闭防火墙"></a>（2）关闭防火墙</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">ufw <span class="built_in">disable</span></span><br><span class="line">ufw status</span><br></pre></td></tr></table></figure>
 <h4 id="（3）禁用Selinux"><a href="#（3）禁用Selinux" class="headerlink" title="（3）禁用Selinux"></a>（3）禁用Selinux</h4><figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">apt install selinux-utils</span><br><span class="line">setenforce 0</span><br></pre></td></tr></table></figure>
