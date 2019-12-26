@@ -96,25 +96,25 @@
 
 
 
-  <meta name="description" content="Go语言中的程序实体包括：变量、常量、函数、结构体及接口。 1、Go语言中的类型推断可以带来哪些好处在写代码时，我们通过使用 Go 语言的类型推断，而节省下来的键盘敲击次数几乎可以忽略不计。阵阵的好处体现在写代码之后的事情上，如代码重构。例子参考：https://time.geekbang.org/column/article/13178 2、变量的重声明这涉及了短变量声明。通过使用它，我们可以对">
-<meta name="keywords" content="go基础">
+  <meta name="description" content="跨域认证互联网服务离不开用户认证，一种认证方式是： 1、 用户向服务器发送用户名和密码；2、 服务器认证通过后，在当前会话(session)中保存相关数据，比如用户角色、登录时间等；3、 服务器向用户返回一个session_id，写入用户的Cookie；4、 用户随后的每一次请求，都会通过Cookie，将session_id传回服务器；5、 服务器收到session_id，找到前期保存的数据，由此">
+<meta name="keywords" content="技术&lt;&#x2F;br&gt;">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Golang学习之程序实体">
-<meta property="og:url" content="http://yoursite.com/2019/03/07/Golang学习之程序实体/index.html">
+<meta property="og:title" content="在Go Iris中使用JWT&lt;&#x2F;br&gt;">
+<meta property="og:url" content="http://yoursite.com/2019/11/04/在Go-Iris中使用JWT/index.html">
 <meta property="og:site_name" content="林鹏的个人博客">
-<meta property="og:description" content="Go语言中的程序实体包括：变量、常量、函数、结构体及接口。 1、Go语言中的类型推断可以带来哪些好处在写代码时，我们通过使用 Go 语言的类型推断，而节省下来的键盘敲击次数几乎可以忽略不计。阵阵的好处体现在写代码之后的事情上，如代码重构。例子参考：https://time.geekbang.org/column/article/13178 2、变量的重声明这涉及了短变量声明。通过使用它，我们可以对">
+<meta property="og:description" content="跨域认证互联网服务离不开用户认证，一种认证方式是： 1、 用户向服务器发送用户名和密码；2、 服务器认证通过后，在当前会话(session)中保存相关数据，比如用户角色、登录时间等；3、 服务器向用户返回一个session_id，写入用户的Cookie；4、 用户随后的每一次请求，都会通过Cookie，将session_id传回服务器；5、 服务器收到session_id，找到前期保存的数据，由此">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-03-21T10:02:10.578Z">
+<meta property="og:updated_time" content="2019-11-04T07:23:44.164Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Golang学习之程序实体">
-<meta name="twitter:description" content="Go语言中的程序实体包括：变量、常量、函数、结构体及接口。 1、Go语言中的类型推断可以带来哪些好处在写代码时，我们通过使用 Go 语言的类型推断，而节省下来的键盘敲击次数几乎可以忽略不计。阵阵的好处体现在写代码之后的事情上，如代码重构。例子参考：https://time.geekbang.org/column/article/13178 2、变量的重声明这涉及了短变量声明。通过使用它，我们可以对">
+<meta name="twitter:title" content="在Go Iris中使用JWT&lt;&#x2F;br&gt;">
+<meta name="twitter:description" content="跨域认证互联网服务离不开用户认证，一种认证方式是： 1、 用户向服务器发送用户名和密码；2、 服务器认证通过后，在当前会话(session)中保存相关数据，比如用户角色、登录时间等；3、 服务器向用户返回一个session_id，写入用户的Cookie；4、 用户随后的每一次请求，都会通过Cookie，将session_id传回服务器；5、 服务器收到session_id，找到前期保存的数据，由此">
 
 
 
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/03/07/Golang学习之程序实体/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/04/在Go-Iris中使用JWT/">
 
 
 
@@ -124,7 +124,7 @@
   };
 </script>
 
-  <title>Golang学习之程序实体 | 林鹏的个人博客</title>
+  <title>在Go Iris中使用JWT<br> | 林鹏的个人博客</title>
   
 
 
@@ -405,7 +405,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/03/07/Golang学习之程序实体/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/04/在Go-Iris中使用JWT/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Niclausse">
@@ -422,7 +422,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Golang学习之程序实体
+          <h1 class="post-title" itemprop="name headline">在Go Iris中使用JWT<br>
 
               
             
@@ -448,24 +448,12 @@
                 
               
 
-              <time title="创建时间：2019-03-07 13:58:59" itemprop="dateCreated datePublished" datetime="2019-03-07T13:58:59+08:00">2019-03-07</time>
+              <time title="创建时间：2019-11-04 13:55:05 / 修改时间：15:23:44" itemprop="dateCreated datePublished" datetime="2019-11-04T13:55:05+08:00">2019-11-04</time>
             
 
             
               
 
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-03-21 18:02:10" itemprop="dateModified" datetime="2019-03-21T18:02:10+08:00">2019-03-21</time>
               
             
           </span>
@@ -517,15 +505,34 @@
       
 
       
-        <p>Go语言中的程序实体包括：变量、常量、函数、结构体及接口。</p>
-<h3 id="1、Go语言中的类型推断可以带来哪些好处"><a href="#1、Go语言中的类型推断可以带来哪些好处" class="headerlink" title="1、Go语言中的类型推断可以带来哪些好处"></a>1、Go语言中的类型推断可以带来哪些好处</h3><p>在写代码时，我们通过使用 Go 语言的类型推断，而节省下来的键盘敲击次数几乎可以忽略不计。阵阵的好处体现在写代码之后的事情上，如<b>代码重构</b>。<br>例子参考：<a><a href="https://time.geekbang.org/column/article/13178" target="_blank" rel="noopener">https://time.geekbang.org/column/article/13178</a></a></p>
-<h3 id="2、变量的重声明"><a href="#2、变量的重声明" class="headerlink" title="2、变量的重声明"></a>2、变量的重声明</h3><p>这涉及了短变量声明。通过使用它，我们可以对同一个代码块中的变量进行重声明。</p>
-<p>变量重声明的前提条件如下：</p>
-<p>1、由于变量的类型在其初始化时已经确定了，所以对它再次声明时赋予的类型必须与其原本的类型一致，否则会产生变异错误。</p>
-<p>2、变量的重声明只能发生在某一个代码块中。</p>
-<p>3、变量的重声明只有在使用短变量声明时才会发生，否则也无法编译通过。</p>
-<p>4、被“声明并赋值”的变量必须是多个，并且其中至少有一个是新变量，这时才可以说对其中的旧变量进行了重声明。</p>
-<p>这样看来，变量重声明其实是一个语法糖（或者叫便利措施）。它允许我们在使用短变量声明时不用理会被赋值的多个变量中是否包含旧变量。</p>
+        <h2 id="跨域认证"><a href="#跨域认证" class="headerlink" title="跨域认证"></a>跨域认证</h2><p>互联网服务离不开用户认证，一种认证方式是：</p>
+<p>1、 用户向服务器发送用户名和密码；<br><br>2、 服务器认证通过后，在当前会话(session)中保存相关数据，比如用户角色、登录时间等；<br><br>3、 服务器向用户返回一个session_id，写入用户的Cookie；<br><br>4、 用户随后的每一次请求，都会通过Cookie，将session_id传回服务器；<br><br>5、 服务器收到session_id，找到前期保存的数据，由此得知用户的身份。</p>
+<h2 id="关于JWT"><a href="#关于JWT" class="headerlink" title="关于JWT"></a>关于JWT</h2><p>JSON Web Token（JWT）是一个开放标准（RFC 7519），它定义了一种紧凑且独立的方式，可以在各方之间作为json对象安全地传输信息。此信息可以通过数字签名进行验证和信任。JWT可以使用秘密或者使用RSA或ECDSA的公钥/私钥对进行签名。</p>
+<p>JWT的原理是，服务器认证后，生成一个JSON对象，发回给用户，就像下面这样。</p>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">"name"</span>: name, </span><br><span class="line">	<span class="attr">"exp"</span>: time.Now().Add(time.Hour * <span class="number">2</span>).Unix()</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>以后，用户与服务端通信的时候，都要发回这个JSON对象。服务器完全只靠这个对象认定用户的身份。为了防止用户篡改数据，服务器再生成这个对象的时候，会加上签名。</p>
+<p>服务器就不保存任何session数据了，也就是说，服务器变成无状态了，从而比较容易实现扩展。</p>
+<p>实际的JWT大概就像下面这样：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJleHAiOjE1NTk4MDMyODEsInBhc3N3b3JkIjoiMTIzMyIsInBob25lIjoiMTU5MDIwMTUwNDMifQ.NvKsiKh37pxmRH4inKb32EXT-XkSfIC96nEX7p1RLag</span><br></pre></td></tr></table></figure>
+<p>它是一个很长的字符串，中间用点（.）分隔成三个部分： Header.Payload.Signature</p>
+<ul>
+<li>Header（头部）：一个JSON对象，描述JWT的元数据，一般如下所示：</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">"alg"</span>: <span class="string">"HS256"</span>,</span><br><span class="line">	<span class="attr">"type"</span>: <span class="string">"JWT"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><code>alg</code>属性表示签名的算法（algorithm），默认是HMAC SHA256（HS256）；<code>type</code>属性表示这个令牌（token）的类型，JWT令牌统一写为JWT。最后，将上面的JSON对象使用Base64URL算法转成字符串。</p>
+<ul>
+<li>Payload（负载）：也是一个JSON对象，用来存放实际需要传递的数据，例如：</li>
+</ul>
+<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">	<span class="attr">"sub"</span>: <span class="string">"1234567890"</span>,</span><br><span class="line">	<span class="attr">"name"</span>: <span class="string">"John Doe"</span>,</span><br><span class="line">	<span class="attr">"admin"</span>: <span class="literal">true</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>同样，Payload经过Base64URL编码，形成JSON Web Token的第二部分，数据虽然不可篡改，但是确实透明的。</p>
+<ul>
+<li>Signature（签名）：对前两部分的签名，防止数据篡改；首先，需要指定一个密钥（secret）。这个密钥只有服务器才知道，不能泄露给用户。然后，使用Header里面指定的签名算法，按照下面的公式产生签名。</li>
+</ul>
+<p>例如，如果要使用HMAC SHA256算法，将按以下方式创建签名：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">HMACSHA256(</span><br><span class="line">	base64UrlEncode(header) + <span class="string">"."</span> + </span><br><span class="line">	base64UrlEncode(payload),</span><br><span class="line">	secret</span><br><span class="line">)</span><br></pre></td></tr></table></figure>
+<p>签名用于验证消息在此过程中未被修改，并且，在使用私钥签名的令牌的情况下，它还可以验证JWT的发件人是否是它所声称的人。</p>
+<p>需要注意的是，使用签名Token，Token中包含的所有信息都会向用户或其他方公开，即使他们无法更改。这意味着不应该在<code>Token</code>中放置秘密信息。</p>
+<h2 id="JWT的工作原理"><a href="#JWT的工作原理" class="headerlink" title="JWT的工作原理"></a>JWT的工作原理</h2><p>在身份验证中，当用户使用其凭据成功登录时，将返回JSON Web Token。由于Token是凭证，因此必须非常小心防止出现安全问题。一般情况下，你不应该将令牌保留的时间超过要求。</p>
 
       
     </div>
@@ -549,7 +556,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/go基础/" rel="tag"># go基础</a>
+            <a href="/tags/技术-br/" rel="tag"># 技术<br></a>
           
         </div>
       
@@ -562,8 +569,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/03/07/Golang学习之命令源码文件/" rel="next" title="Golang学习之命令源码文件">
-                <i class="fa fa-chevron-left"></i> Golang学习之命令源码文件
+              <a href="/2019/09/18/基于ubuntu16-04部署k8s集群/" rel="next" title="基于ubuntu16.04部署k8s集群<br/>">
+                <i class="fa fa-chevron-left"></i> 基于ubuntu16.04部署k8s集群<br>
               </a>
             
           </div>
@@ -572,8 +579,8 @@
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/03/22/基于Kubernetes集群部署Hyperledger-Fabric/" rel="prev" title="基于Kubernetes集群部署Hyperledger-Fabric">
-                基于Kubernetes集群部署Hyperledger-Fabric <i class="fa fa-chevron-right"></i>
+              <a href="/2019/12/26/Go语言函数回调及闭包/" rel="prev" title="Go语言函数回调及闭包">
+                Go语言函数回调及闭包 <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -723,7 +730,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#1、Go语言中的类型推断可以带来哪些好处"><span class="nav-number">1.</span> <span class="nav-text">1、Go语言中的类型推断可以带来哪些好处</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#2、变量的重声明"><span class="nav-number">2.</span> <span class="nav-text">2、变量的重声明</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#跨域认证"><span class="nav-number">1.</span> <span class="nav-text">跨域认证</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#关于JWT"><span class="nav-number">2.</span> <span class="nav-text">关于JWT</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#JWT的工作原理"><span class="nav-number">3.</span> <span class="nav-text">JWT的工作原理</span></a></li></ol></div>
             
 
           </div>
