@@ -3,10 +3,10 @@
 ## Source: https://github.com/hexojs/hexo/
 
 # Site
-title: 林鹏的个人博客
-subtitle: record my growth
+title: 突然想学习
+subtitle: 上分日记
 description: To Be A Better Coder
-keywords: Blockchain, Golang, Linux, Life
+keywords: Blockchain, Golang, Linux,K8S, Life
 author: Niclausse
 language: zh-CN
 timezone: Asia/Shanghai

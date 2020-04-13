@@ -31,7 +31,7 @@ Go 语⾔言⽀支持匿匿名函数，可作为闭包。匿匿名函数是⼀�
 
 以下实例例中，创建了了函数 getSequence() ，返回另外⼀一个函数。该函数的⽬目的是在闭包中递增 i变量，代码如下：
 
-```json
+```go
 package closure
 
 func getSequence() func() int {
@@ -47,7 +47,7 @@ func getSequence() func() int {
 
 调用代码如下：
 
-```json
+```go
 package closure
 
 import (
