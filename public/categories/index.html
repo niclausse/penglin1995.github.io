@@ -96,18 +96,18 @@
 
 
 
-  <meta name="description" content="To Be A Better Coder">
+  <meta name="description" content="var gitalkConfig = {&quot;clientID&quot;:&quot;d6d9b7d783187ed7da81&quot;,&quot;clientSecret&quot;:&quot;bf87b52d7193ce1e604a1c980db5d2b7d368cadb&quot;,&quot;repo&quot;:&quot;gitalk&quot;,&quot;owner&quot;:&quot;Niclausse&quot;,&quot;admin&quot;:[&quot;Niclausse&quot;],&quot;distractionFreeMode&quot;">
 <meta name="keywords" content="Blockchain, Golang, Linux,K8S, Life">
 <meta property="og:type" content="website">
 <meta property="og:title" content="categories">
 <meta property="og:url" content="http://yoursite.com/categories/index.html">
 <meta property="og:site_name" content="突然想学习">
-<meta property="og:description" content="To Be A Better Coder">
+<meta property="og:description" content="var gitalkConfig = {&quot;clientID&quot;:&quot;d6d9b7d783187ed7da81&quot;,&quot;clientSecret&quot;:&quot;bf87b52d7193ce1e604a1c980db5d2b7d368cadb&quot;,&quot;repo&quot;:&quot;gitalk&quot;,&quot;owner&quot;:&quot;Niclausse&quot;,&quot;admin&quot;:[&quot;Niclausse&quot;],&quot;distractionFreeMode&quot;">
 <meta property="og:locale" content="zh-CN">
 <meta property="og:updated_time" content="2019-03-21T10:02:10.579Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="categories">
-<meta name="twitter:description" content="To Be A Better Coder">
+<meta name="twitter:description" content="var gitalkConfig = {&quot;clientID&quot;:&quot;d6d9b7d783187ed7da81&quot;,&quot;clientSecret&quot;:&quot;bf87b52d7193ce1e604a1c980db5d2b7d368cadb&quot;,&quot;repo&quot;:&quot;gitalk&quot;,&quot;owner&quot;:&quot;Niclausse&quot;,&quot;admin&quot;:[&quot;Niclausse&quot;],&quot;distractionFreeMode&quot;">
 
 
 
@@ -711,6 +711,27 @@
   <script src="/js/src/utils.js?v=7.0.1"></script>
 
   <script src="/js/src/motion.js?v=7.0.1"></script>
+
+<!-- gitalk.swig -->
+<link href="https://cdn.bootcss.com/gitalk/1.4.0/gitalk.min.css" rel="stylesheet">
+<script src="https://cdn.bootcss.com/gitalk/1.4.0/gitalk.min.js"></script>
+<script src="https://cdn.bootcss.com/blueimp-md5/2.10.0/js/md5.min.js"></script>
+<script type="text/javascript">
+  var gitalk = new Gitalk({
+    clientID: '',
+    clientSecret: '',
+    repo: '',
+    owner: '',
+    admin: [''],
+    id: md5(location.pathname),   // ISSUE：location.href 限制50个字符 (应该是Issue 内容存数据库的标识， 具体在页面上无感)
+    labels: ''.split(',').filter(l => l),  // 需要的 labels需要一个数组，否则会报错
+    perPage: ,
+    pagerDirection: '',
+    createIssueManually: ,
+    distractionFreeMode: 
+  })
+  gitalk.render('gitalk-container')
+</script>
 
 
 

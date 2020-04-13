@@ -72,6 +72,15 @@ pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
+plugins:
+  gitalk:
+    clientID: d6d9b7d783187ed7da81
+    clientSecret: bf87b52d7193ce1e604a1c980db5d2b7d368cadb
+    repo: gitalk
+    owner: Niclausse
+    admin: 
+      - Niclausse
+    distractionFreeMode: false
 ## Themes: https://hexo.io/themes/
 theme: next
 
