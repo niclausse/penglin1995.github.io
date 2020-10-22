@@ -77,9 +77,9 @@ plugins:
     clientID: d6d9b7d783187ed7da81
     clientSecret: bf87b52d7193ce1e604a1c980db5d2b7d368cadb
     repo: gitalk
-    owner: Niclausse
+    owner: penglin1995
     admin: 
-      - Niclausse
+      - penglin1995
     distractionFreeMode: false
 ## Themes: https://hexo.io/themes/
 theme: next
@@ -88,5 +88,5 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   type: git 
-  repository: https://github.com/Niclausse/Niclausse.github.io.git
+  repository: https://github.com/penglin1995/penglin1995.github.io.git
   branch: master
